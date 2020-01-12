@@ -1,12 +1,10 @@
 package com.example.RealmLibrary.models;
 
-import javax.persistence.CascadeType;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import javax.persistence.OneToMany;
+import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.List;
 
+@Entity
 public class Story {
 
     @Id
@@ -20,5 +18,5 @@ public class Story {
     @OneToMany(cascade = CascadeType.ALL)
     private List<Character> involvedCharacters = new ArrayList<>();
 
-    
+
 }
