@@ -1,4 +1,6 @@
-package com.example.RealmLibrary.models;
+package com.example.RealmLibrary.models.StoryTelling;
+
+import com.example.RealmLibrary.models.StoryTelling.Character;
 
 import javax.persistence.CascadeType;
 import javax.persistence.Entity;

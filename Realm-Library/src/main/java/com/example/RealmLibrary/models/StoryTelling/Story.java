@@ -1,4 +1,6 @@
-package com.example.RealmLibrary.models;
+package com.example.RealmLibrary.models.StoryTelling;
+
+import com.example.RealmLibrary.models.StoryTelling.Character;
 
 import javax.persistence.*;
 import java.util.ArrayList;
@@ -6,6 +8,7 @@ import java.util.List;
 
 @Entity
 public class Story {
+
 
     @Id
     @GeneratedValue
