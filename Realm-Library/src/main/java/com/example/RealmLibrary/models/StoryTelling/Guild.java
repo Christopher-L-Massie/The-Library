@@ -2,17 +2,14 @@ package com.example.RealmLibrary.models.StoryTelling;
 
 import com.example.RealmLibrary.models.StoryTelling.Character;
 
-import javax.persistence.CascadeType;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.OneToMany;
+import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.List;
 
 @Entity
 public class Guild {
 
-
+    @Id
     @GeneratedValue
     private int id;
 
