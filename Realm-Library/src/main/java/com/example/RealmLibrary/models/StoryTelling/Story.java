@@ -20,5 +20,10 @@ public class Story {
     @OneToMany(cascade = CascadeType.ALL)
     private List<Character> involvedCharacters = new ArrayList<>();
 
+    //|||CONSTRUCTORS|||
+
+    //empty for database setup
+    public Story(){}
+
 
 }

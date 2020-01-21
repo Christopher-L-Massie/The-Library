@@ -17,5 +17,10 @@ public class Book {
 
     private String displayName;
 
+    //|||CONSTRUCTORS|||
+
+    //empty for database setup
+    public Book(){}
+
 
 }

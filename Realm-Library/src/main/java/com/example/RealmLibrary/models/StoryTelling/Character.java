@@ -23,5 +23,10 @@ public class Character {
 
     private String characterClass;
 
+    //|||CONSTRUCTORS|||
+
+    //empty for database setup
+    public Character(){}
+
 
 }

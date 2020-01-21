@@ -17,6 +17,10 @@ public class Building {
     witty comment
     */
 
+    //|||CONSTRUCTORS|||
+
+    //empty for database setup
+    public Building(){}
 
 
 

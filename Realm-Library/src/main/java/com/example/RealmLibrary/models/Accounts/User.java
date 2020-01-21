@@ -12,4 +12,9 @@ public class User {
     int id;
 
     private String userName;
+
+    //|||CONSTRUCTORS|||
+
+    //empty for database setup
+    public User(){}
 }

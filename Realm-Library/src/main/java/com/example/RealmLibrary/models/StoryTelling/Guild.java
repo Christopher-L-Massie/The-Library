@@ -21,4 +21,9 @@ public class Guild {
 
     @OneToMany(cascade = CascadeType.ALL)
     private List<Character> guildMembers = new ArrayList<>();
+
+    //|||CONSTRUCTORS|||
+
+    //empty for database setup
+    public Guild(){}
 }
