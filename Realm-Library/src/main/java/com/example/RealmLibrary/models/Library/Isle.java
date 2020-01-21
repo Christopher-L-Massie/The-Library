@@ -21,7 +21,7 @@ public class Isle {
     private Timestamp timeCreated = new Timestamp(System.currentTimeMillis());
 
     //|||CONSTRUCTORS|||
-    
+
     //empty for database setup
     public Isle(){}
 
