@@ -9,6 +9,8 @@ import java.sql.Timestamp;
 @Entity
 public class Shelf {
 
+    //|||PROPERTIES|||
+
     @Id
     @GeneratedValue
     int id;

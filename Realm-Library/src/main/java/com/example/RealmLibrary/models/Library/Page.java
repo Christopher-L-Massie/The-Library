@@ -8,6 +8,8 @@ import java.sql.Timestamp;
 @Entity
 public class Page {
 
+    //|||PROPERTIES|||
+
     @Id
     @GeneratedValue
     int id;

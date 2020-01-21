@@ -10,6 +10,8 @@ import java.util.List;
 @Entity
 public class Story {
 
+    //|||PROPERTIES|||
+
     @Id
     @GeneratedValue
     int id;

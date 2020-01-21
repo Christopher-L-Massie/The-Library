@@ -10,6 +10,8 @@ import java.util.List;
 @Entity
 public class Guild {
 
+    //|||PROPERTIES|||
+
     @Id
     @GeneratedValue
     private int id;
