@@ -9,7 +9,6 @@ import java.util.List;
 @Entity
 public class Story {
 
-
     @Id
     @GeneratedValue
     int id;
