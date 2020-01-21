@@ -13,6 +13,12 @@ import java.time.Instant;
 @RequestMapping(value = "test")
 public class TestController {
 
+    @RequestMapping(value = "character_creation")
+    public String testCharacterCreator(Model model){
+
+        return"home/index";
+    }
+
 
 
 }
