@@ -1,6 +1,7 @@
 package com.example.RealmLibrary.models.Library;
 
 import javax.persistence.*;
+import java.sql.Timestamp;
 
 @Entity
 public class Building {
@@ -12,6 +13,8 @@ public class Building {
     int id;
 
     private String libraryName;
+
+    private Timestamp timeCreated = new Timestamp(System.currentTimeMillis());
 
     /*
     witty comment

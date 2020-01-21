@@ -3,6 +3,7 @@ package com.example.RealmLibrary.models.Accounts;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import java.sql.Timestamp;
 
 @Entity
 public class User {
@@ -12,6 +13,8 @@ public class User {
     int id;
 
     private String userName;
+
+    private Timestamp timeCreated = new Timestamp(System.currentTimeMillis());
 
     //|||CONSTRUCTORS|||
 
