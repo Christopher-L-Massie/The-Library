@@ -1,10 +1,10 @@
 package com.example.RealmLibrary.models.Library;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
+import javax.persistence.*;
 import javax.validation.constraints.Max;
 import java.sql.Timestamp;
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity
 public class Shelf {
@@ -19,6 +19,10 @@ public class Shelf {
     private int shelfNumber;
 
     private Timestamp timeCreated = new Timestamp(System.currentTimeMillis());
+
+    @OneToMany(cascade = CascadeType.ALL)
+    @Max(5)
+    private List<Book> books = new ArrayList<>();
 
     //|||CONSTRUCTORS|||
 
