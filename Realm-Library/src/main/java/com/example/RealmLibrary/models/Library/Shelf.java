@@ -28,4 +28,38 @@ public class Shelf {
 
     //empty for database setup
     public Shelf(){}
+    
+    //|||ACCESSORS|||
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public int getShelfNumber() {
+        return shelfNumber;
+    }
+
+    public void setShelfNumber(int shelfNumber) {
+        this.shelfNumber = shelfNumber;
+    }
+
+    public Timestamp getTimeCreated() {
+        return timeCreated;
+    }
+
+    public void setTimeCreated(Timestamp timeCreated) {
+        this.timeCreated = timeCreated;
+    }
+
+    public List<Book> getBooks() {
+        return books;
+    }
+
+    public void setBooks(List<Book> books) {
+        this.books = books;
+    }
 }
