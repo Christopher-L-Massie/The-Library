@@ -16,6 +16,8 @@ public class Book {
     @GeneratedValue
     int id;
 
+    private int bookNumber;
+
     private String bookName;
 
     private Timestamp timeCreated = new Timestamp(System.currentTimeMillis());
