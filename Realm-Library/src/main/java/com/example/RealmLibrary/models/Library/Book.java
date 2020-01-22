@@ -2,10 +2,10 @@ package com.example.RealmLibrary.models.Library;
 
 import org.hibernate.annotations.NaturalId;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
+import javax.persistence.*;
 import java.sql.Timestamp;
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity
 public class Book {
@@ -19,6 +19,9 @@ public class Book {
     private String displayName;
 
     private Timestamp timeCreated = new Timestamp(System.currentTimeMillis());
+
+    @OneToMany(cascade = CascadeType.ALL)
+    private List<Page> pages = new ArrayList<>();
 
     //|||CONSTRUCTORS|||
 
