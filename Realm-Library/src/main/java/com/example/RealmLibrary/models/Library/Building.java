@@ -2,6 +2,8 @@ package com.example.RealmLibrary.models.Library;
 
 import javax.persistence.*;
 import java.sql.Timestamp;
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity
 public class Building {
@@ -16,6 +18,9 @@ public class Building {
 
     private Timestamp timeCreated = new Timestamp(System.currentTimeMillis());
 
+    @OneToMany(cascade = CascadeType.ALL)
+    private List<Bookcase> bookcases = new ArrayList<>();
+
     /*
     witty comment
     */
@@ -24,6 +29,7 @@ public class Building {
 
     //empty for database setup
     public Building(){}
+
 
 
 
