@@ -1,6 +1,7 @@
 package com.example.RealmLibrary.models.Library;
 
 import javax.persistence.*;
+import javax.validation.constraints.Max;
 import java.sql.Timestamp;
 import java.util.ArrayList;
 import java.util.List;
@@ -19,7 +20,7 @@ public class Building {
     private Timestamp timeCreated = new Timestamp(System.currentTimeMillis());
 
     @OneToMany(cascade = CascadeType.ALL)
-    private List<Bookcase> bookcases = new ArrayList<>();
+    private List<Isle> isles = new ArrayList<>();
 
     /*
     witty comment
@@ -57,11 +58,11 @@ public class Building {
         this.timeCreated = timeCreated;
     }
 
-    public List<Bookcase> getBookcases() {
-        return bookcases;
+    public List<Isle> getIsles() {
+        return isles;
     }
 
-    public void setBookcases(List<Bookcase> bookcases) {
-        this.bookcases = bookcases;
+    public void setIsles(List<Isle> isles) {
+        this.isles = isles;
     }
 }
