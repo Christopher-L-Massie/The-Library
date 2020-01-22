@@ -29,7 +29,7 @@ public class Isle {
     public Isle(){}
 
     //|||ACCESSORS|||
-    
+
     public int getId() {
         return id;
     }
