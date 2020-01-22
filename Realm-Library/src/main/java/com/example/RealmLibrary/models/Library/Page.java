@@ -24,4 +24,38 @@ public class Page {
 
     //empty for database setup
     public Page(){}
+
+    //|||ACCESSORS||
+    
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public int getPageNumber() {
+        return pageNumber;
+    }
+
+    public void setPageNumber(int pageNumber) {
+        this.pageNumber = pageNumber;
+    }
+
+    public String getPageContents() {
+        return pageContents;
+    }
+
+    public void setPageContents(String pageContents) {
+        this.pageContents = pageContents;
+    }
+
+    public Timestamp getTimeCreated() {
+        return timeCreated;
+    }
+
+    public void setTimeCreated(Timestamp timeCreated) {
+        this.timeCreated = timeCreated;
+    }
 }
