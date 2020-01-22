@@ -19,7 +19,7 @@ public class Bookcase {
     private Timestamp timeCreated = new Timestamp(System.currentTimeMillis());
 
     @OneToMany(cascade = CascadeType.ALL)
-    private List<Book> books = new ArrayList<>();
+    private List<Shelf> shelves = new ArrayList<>();
 
     //|||CONSTRUCTORS|||
 
@@ -52,11 +52,11 @@ public class Bookcase {
         this.timeCreated = timeCreated;
     }
 
-    public List<Book> getBooks() {
-        return books;
+    public List<Shelf> getShelves() {
+        return shelves;
     }
 
-    public void setBooks(List<Book> books) {
-        this.books = books;
+    public void setShelves(List<Shelf> shelves) {
+        this.shelves = shelves;
     }
 }
