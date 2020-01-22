@@ -20,6 +20,7 @@ public class Isle {
     private Timestamp timeCreated = new Timestamp(System.currentTimeMillis());
 
     @OneToMany(cascade = CascadeType.ALL)
+    @Max(2)
     private List<Bookcase> bookcases = new ArrayList<>();
 
     //|||CONSTRUCTORS|||
