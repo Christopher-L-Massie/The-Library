@@ -17,9 +17,6 @@ public class Isle {
 
     private int isleNumber;
 
-    @Max(4)
-    private int isleQuadrant;
-
     private Timestamp timeCreated = new Timestamp(System.currentTimeMillis());
 
     @OneToMany(cascade = CascadeType.ALL)
