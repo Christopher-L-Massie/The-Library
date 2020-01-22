@@ -30,7 +30,38 @@ public class Building {
     //empty for database setup
     public Building(){}
 
+    //|||ACCESSORS|||
 
 
+    public int getId() {
+        return id;
+    }
 
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getLibraryName() {
+        return libraryName;
+    }
+
+    public void setLibraryName(String libraryName) {
+        this.libraryName = libraryName;
+    }
+
+    public Timestamp getTimeCreated() {
+        return timeCreated;
+    }
+
+    public void setTimeCreated(Timestamp timeCreated) {
+        this.timeCreated = timeCreated;
+    }
+
+    public List<Bookcase> getBookcases() {
+        return bookcases;
+    }
+
+    public void setBookcases(List<Bookcase> bookcases) {
+        this.bookcases = bookcases;
+    }
 }
