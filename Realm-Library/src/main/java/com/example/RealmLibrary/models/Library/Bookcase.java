@@ -1,9 +1,9 @@
 package com.example.RealmLibrary.models.Library;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
+import javax.persistence.*;
 import java.sql.Timestamp;
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity
 public class Bookcase {
@@ -17,6 +17,9 @@ public class Bookcase {
     private int bookcaseNumber;
 
     private Timestamp timeCreated = new Timestamp(System.currentTimeMillis());
+
+    @OneToMany(cascade = CascadeType.ALL)
+    private List<Book> books = new ArrayList<>();
 
     //|||CONSTRUCTORS|||
 
