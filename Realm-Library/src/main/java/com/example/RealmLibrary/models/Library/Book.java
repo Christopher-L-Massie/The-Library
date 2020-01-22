@@ -16,7 +16,7 @@ public class Book {
     @GeneratedValue
     int id;
 
-    private String displayName;
+    private String bookName;
 
     private Timestamp timeCreated = new Timestamp(System.currentTimeMillis());
 
@@ -38,12 +38,12 @@ public class Book {
         this.id = id;
     }
 
-    public String getDisplayName() {
-        return displayName;
+    public String getBookName() {
+        return bookName;
     }
 
-    public void setDisplayName(String displayName) {
-        this.displayName = displayName;
+    public void setBookName(String bookName) {
+        this.bookName = bookName;
     }
 
     public Timestamp getTimeCreated() {
