@@ -1,6 +1,7 @@
 package com.example.RealmLibrary.models.Library;
 
 import javax.persistence.*;
+import javax.validation.constraints.Max;
 import java.sql.Timestamp;
 import java.util.ArrayList;
 import java.util.List;
@@ -19,6 +20,7 @@ public class Bookcase {
     private Timestamp timeCreated = new Timestamp(System.currentTimeMillis());
 
     @OneToMany(cascade = CascadeType.ALL)
+    @Max(5)
     private List<Shelf> shelves = new ArrayList<>();
 
     //|||CONSTRUCTORS|||
