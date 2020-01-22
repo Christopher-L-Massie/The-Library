@@ -22,6 +22,8 @@ public class Building {
     @OneToMany(cascade = CascadeType.ALL)
     private List<Isle> isles = new ArrayList<>();
 
+    //|||METHODS|||
+
     //|||CONSTRUCTORS|||
 
     //empty for database setup

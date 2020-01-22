@@ -23,6 +23,8 @@ public class Book {
     @OneToMany(cascade = CascadeType.ALL)
     private List<Page> pages = new ArrayList<>();
 
+    //|||METHODS|||
+
     //|||CONSTRUCTORS|||
 
     //empty for database setup

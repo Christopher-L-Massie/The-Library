@@ -23,6 +23,8 @@ public class Isle {
     @Max(2)
     private List<Bookcase> bookcases = new ArrayList<>();
 
+    //|||METHODS|||
+
     //|||CONSTRUCTORS|||
 
     //empty for database setup

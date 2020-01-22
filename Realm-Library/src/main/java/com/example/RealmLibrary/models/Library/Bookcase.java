@@ -23,6 +23,8 @@ public class Bookcase {
     @Max(5)
     private List<Shelf> shelves = new ArrayList<>();
 
+    //|||METHODS|||
+
     //|||CONSTRUCTORS|||
 
     //empty for database setup

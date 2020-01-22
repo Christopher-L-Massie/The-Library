@@ -24,11 +24,13 @@ public class Shelf {
     @Max(5)
     private List<Book> books = new ArrayList<>();
 
+    //|||METHODS|||
+
     //|||CONSTRUCTORS|||
 
     //empty for database setup
     public Shelf(){}
-    
+
     //|||ACCESSORS|||
 
     public int getId() {

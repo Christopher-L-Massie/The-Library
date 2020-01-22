@@ -20,13 +20,15 @@ public class Page {
 
     private Timestamp timeCreated = new Timestamp(System.currentTimeMillis());
 
+    //|||METHODS|||
+
     //|||CONSTRUCTORS|||
 
     //empty for database setup
     public Page(){}
 
     //|||ACCESSORS||
-    
+
     public int getId() {
         return id;
     }
