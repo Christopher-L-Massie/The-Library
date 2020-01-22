@@ -25,4 +25,38 @@ public class Bookcase {
 
     //empty for database setup
     public Bookcase(){}
+
+    //|||ACCESSORS|||
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public int getBookcaseNumber() {
+        return bookcaseNumber;
+    }
+
+    public void setBookcaseNumber(int bookcaseNumber) {
+        this.bookcaseNumber = bookcaseNumber;
+    }
+
+    public Timestamp getTimeCreated() {
+        return timeCreated;
+    }
+
+    public void setTimeCreated(Timestamp timeCreated) {
+        this.timeCreated = timeCreated;
+    }
+
+    public List<Book> getBooks() {
+        return books;
+    }
+
+    public void setBooks(List<Book> books) {
+        this.books = books;
+    }
 }
