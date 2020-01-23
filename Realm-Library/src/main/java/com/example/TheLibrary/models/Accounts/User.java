@@ -1,4 +1,4 @@
-package com.example.RealmLibrary.models.Accounts;
+package com.example.TheLibrary.models.Accounts;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;

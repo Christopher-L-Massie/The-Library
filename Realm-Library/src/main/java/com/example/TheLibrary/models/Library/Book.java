@@ -1,6 +1,4 @@
-package com.example.RealmLibrary.models.Library;
-
-import org.hibernate.annotations.NaturalId;
+package com.example.TheLibrary.models.Library;
 
 import javax.persistence.*;
 import java.sql.Timestamp;

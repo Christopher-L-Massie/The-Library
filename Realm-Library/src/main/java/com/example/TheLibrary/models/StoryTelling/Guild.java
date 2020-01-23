@@ -1,6 +1,4 @@
-package com.example.RealmLibrary.models.StoryTelling;
-
-import com.example.RealmLibrary.models.StoryTelling.Character;
+package com.example.TheLibrary.models.StoryTelling;
 
 import javax.persistence.*;
 import java.sql.Timestamp;

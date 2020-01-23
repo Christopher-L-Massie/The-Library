@@ -1,36 +1,35 @@
-package com.example.RealmLibrary.models.Library;
+package com.example.TheLibrary.models.Library;
 
 import javax.persistence.*;
-import javax.validation.constraints.Max;
 import java.sql.Timestamp;
 import java.util.ArrayList;
 import java.util.List;
 
 @Entity
-public class Isle {
+public class Building {
 
-    //|||PROPERTIES|||
+    //||PROPERTIES||
 
     @Id
     @GeneratedValue
     int id;
 
-    private int isleNumber;
+    private String libraryName;
 
     private Timestamp timeCreated = new Timestamp(System.currentTimeMillis());
 
     @OneToMany(cascade = CascadeType.ALL)
-    @Max(2)
-    private List<Bookcase> bookcases = new ArrayList<>();
+    private List<Isle> isles = new ArrayList<>();
 
     //|||METHODS|||
 
     //|||CONSTRUCTORS|||
 
     //empty for database setup
-    public Isle(){}
+    public Building(){}
 
     //|||ACCESSORS|||
+
 
     public int getId() {
         return id;
@@ -40,12 +39,12 @@ public class Isle {
         this.id = id;
     }
 
-    public int getIsleNumber() {
-        return isleNumber;
+    public String getLibraryName() {
+        return libraryName;
     }
 
-    public void setIsleNumber(int isleNumber) {
-        this.isleNumber = isleNumber;
+    public void setLibraryName(String libraryName) {
+        this.libraryName = libraryName;
     }
 
     public Timestamp getTimeCreated() {
@@ -56,11 +55,11 @@ public class Isle {
         this.timeCreated = timeCreated;
     }
 
-    public List<Bookcase> getBookcases() {
-        return bookcases;
+    public List<Isle> getIsles() {
+        return isles;
     }
 
-    public void setBookcases(List<Bookcase> bookcases) {
-        this.bookcases = bookcases;
+    public void setIsles(List<Isle> isles) {
+        this.isles = isles;
     }
 }

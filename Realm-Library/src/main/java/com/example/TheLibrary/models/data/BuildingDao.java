@@ -1,6 +1,6 @@
-package com.example.RealmLibrary.models.data;
+package com.example.TheLibrary.models.data;
 
-import com.example.RealmLibrary.models.Library.Building;
+import com.example.TheLibrary.models.Library.Building;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 
