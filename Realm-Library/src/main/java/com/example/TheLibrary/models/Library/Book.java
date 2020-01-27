@@ -23,6 +23,8 @@ public class Book {
     @OneToMany(cascade = CascadeType.ALL)
     private List<Page> pages = new ArrayList<>();
 
+    private boolean isSigned;
+
     //|||METHODS|||
 
     //|||CONSTRUCTORS|||
@@ -63,4 +65,8 @@ public class Book {
     public void setPages(List<Page> pages) {
         this.pages = pages;
     }
+
+    public boolean isSigned(){return this.isSigned;}
+
+    public void setSigned(boolean isSigned){this.isSigned=isSigned;}
 }
