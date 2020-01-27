@@ -27,6 +27,16 @@ public class Bookcase {
 
     //|||METHODS|||
 
+    public boolean addShelf(){
+        if (5 > this.shelves.size()){
+            this.shelves.add(new Shelf(this.shelves.size()));
+            return this.isFull;
+        } else {
+            this.full();
+            return this.isFull;
+        }
+    }
+
     public void full(){
         this.isFull = true;
     }
