@@ -27,6 +27,11 @@ public class Building {
 
     //empty for database setup
     public Building(){}
+    
+    public Building(String libraryName){
+        this.libraryName = libraryName;
+        this.timeCreated = new Timestamp (System.currentTimeMillis());
+    }
 
     //|||ACCESSORS|||
 
