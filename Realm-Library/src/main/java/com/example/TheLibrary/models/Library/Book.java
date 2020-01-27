@@ -29,6 +29,11 @@ public class Book {
 
     //|||METHODS|||
 
+    public void createPage(int pageNumber,String pageContents){
+        this.pages.add(new Page(pageNumber,pageContents));
+        this.setNumberOfPages(pages.size());
+    }
+
     //|||CONSTRUCTORS|||
 
     //empty for database setup
