@@ -30,6 +30,11 @@ public class Isle {
     //empty for database setup
     public Isle(){}
 
+    public Isle(int isleNumber){
+        this.isleNumber = isleNumber;
+        this.timeCreated = new Timestamp(System.currentTimeMillis());
+    }
+
     //|||ACCESSORS|||
 
     public int getId() {
