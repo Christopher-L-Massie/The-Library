@@ -34,6 +34,10 @@ public class Book {
         this.setNumberOfPages(pages.size());
     }
 
+    public void signBook(){
+        this.isSigned = true;
+    }
+
     //|||CONSTRUCTORS|||
 
     //empty for database setup
