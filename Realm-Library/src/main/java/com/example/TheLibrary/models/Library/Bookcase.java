@@ -30,6 +30,10 @@ public class Bookcase {
     //empty for database setup
     public Bookcase(){}
 
+    public Bookcase(int bookcaseNumber){
+        this.bookcaseNumber = bookcaseNumber;
+    }
+
     //|||ACCESSORS|||
 
     public int getId() {
