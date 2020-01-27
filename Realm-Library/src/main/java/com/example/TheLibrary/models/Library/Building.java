@@ -23,11 +23,15 @@ public class Building {
 
     //|||METHODS|||
 
+    public void addBook(){
+        System.out.println("Placeholder!");
+    }
+
     //|||CONSTRUCTORS|||
 
     //empty for database setup
     public Building(){}
-    
+
     public Building(String libraryName){
         this.libraryName = libraryName;
         this.timeCreated = new Timestamp (System.currentTimeMillis());
