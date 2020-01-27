@@ -23,6 +23,8 @@ public class Bookcase {
     @Max(5)
     private List<Shelf> shelves = new ArrayList<>();
 
+    private boolean isFull = false;
+
     //|||METHODS|||
 
     //|||CONSTRUCTORS|||
@@ -67,4 +69,8 @@ public class Bookcase {
     public void setShelves(List<Shelf> shelves) {
         this.shelves = shelves;
     }
+
+    public boolean isFull(){return this.isFull;}
+
+    private void setFull(boolean isFull){this.isFull = isFull;}
 }
