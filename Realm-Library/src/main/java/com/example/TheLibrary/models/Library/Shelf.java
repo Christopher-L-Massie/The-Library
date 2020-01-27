@@ -47,6 +47,10 @@ public class Shelf {
     //empty for database setup
     public Shelf(){}
 
+    public Shelf(int shelfNumber){
+        this.shelfNumber = shelfNumber;
+    }
+
     //|||ACCESSORS|||
 
     public int getId() {
