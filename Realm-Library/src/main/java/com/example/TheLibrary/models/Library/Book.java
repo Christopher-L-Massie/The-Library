@@ -25,7 +25,7 @@ public class Book {
     @OneToMany(cascade = CascadeType.ALL)
     private List<Page> pages = new ArrayList<>();
 
-    private boolean isSigned;
+    private boolean isSigned = false;
 
     //|||METHODS|||
 
@@ -38,6 +38,12 @@ public class Book {
 
     //empty for database setup
     public Book(){}
+
+    public Book(int bookNumber,String bookName){
+        this.bookNumber = bookNumber;
+        this.bookName = bookName;
+        this.timeCreated = new Timestamp(System.currentTimeMillis());
+    }
 
     //|||ACCESSORS|||
 
