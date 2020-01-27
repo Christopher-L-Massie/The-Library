@@ -18,6 +18,8 @@ public class Book {
 
     private String bookName;
 
+    private int numberOfPages;
+
     private Timestamp timeCreated = new Timestamp(System.currentTimeMillis());
 
     @OneToMany(cascade = CascadeType.ALL)
@@ -69,4 +71,8 @@ public class Book {
     public boolean isSigned(){return this.isSigned;}
 
     public void setSigned(boolean isSigned){this.isSigned=isSigned;}
+
+    public int getNumberOfPages(){return this.numberOfPages;}
+
+    public void setNumberOfPages(int numberOfPages){this.numberOfPages = numberOfPages;}
 }
