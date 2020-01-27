@@ -85,7 +85,7 @@ public class Book {
 
     public boolean isSigned(){return this.isSigned;}
 
-    public void setSigned(boolean isSigned){this.isSigned=isSigned;}
+    private void setSigned(boolean isSigned){this.isSigned=isSigned;}
 
     public int getNumberOfPages(){return this.numberOfPages;}
 
