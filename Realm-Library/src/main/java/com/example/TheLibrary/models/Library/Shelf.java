@@ -28,6 +28,16 @@ public class Shelf {
 
     //|||METHODS|||
 
+    public boolean addBook(Book book){
+        if (5 > this.books.size()){
+            this.books.add(book);
+            return this.isFull();
+        } else {
+            this.full();
+            return this.isFull();
+        }
+    }
+
     public void full(){
         this.isFull = true;
     }
