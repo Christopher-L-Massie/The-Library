@@ -1,8 +1,6 @@
 package com.example.TheLibrary.models.Library;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
+import javax.persistence.*;
 import java.sql.Timestamp;
 
 @Entity
@@ -26,6 +24,12 @@ public class Page {
 
     //empty for database setup
     public Page(){}
+
+    public Page(int pageNumber, String pageContents){
+        this.pageNumber = pageNumber;
+        this.pageContents = pageContents;
+        this.timeCreated = new Timestamp(System.currentTimeMillis());
+    }
 
     //|||ACCESSORS||
 
