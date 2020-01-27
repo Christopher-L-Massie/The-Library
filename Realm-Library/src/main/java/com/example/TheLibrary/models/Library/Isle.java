@@ -27,6 +27,10 @@ public class Isle {
 
     //|||METHODS|||
 
+    public void full(){
+        this.isFull = true;
+    }
+
     //|||CONSTRUCTORS|||
 
     //empty for database setup
