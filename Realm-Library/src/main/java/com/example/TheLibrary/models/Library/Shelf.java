@@ -28,6 +28,10 @@ public class Shelf {
 
     //|||METHODS|||
 
+    public void full(){
+        this.isFull = true;
+    }
+
     //|||CONSTRUCTORS|||
 
     //empty for database setup
