@@ -19,7 +19,7 @@ public class Building {
     private Timestamp timeCreated = new Timestamp(System.currentTimeMillis());
 
     @OneToMany(cascade = CascadeType.ALL)
-    private List<Isle> isles = new ArrayList<>();
+    private List<Book> books = new ArrayList<>();
 
     //|||METHODS|||
 
@@ -64,11 +64,11 @@ public class Building {
         this.timeCreated = timeCreated;
     }
 
-    public List<Isle> getIsles() {
-        return isles;
+    public List<Book> getBooks() {
+        return books;
     }
 
-    public void setIsles(List<Isle> isles) {
-        this.isles = isles;
+    public void setBook(List<Book> books) {
+        this.books = books;
     }
 }
