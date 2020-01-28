@@ -14,7 +14,7 @@ public class TestController {
     @Autowired
     public BuildingDao buildingDao;
 
-    @RequestMapping(value = "character_creation")
+    @RequestMapping(value = "book")
     public String testCharacterCreator(Model model){
 
         System.out.println("hello");
