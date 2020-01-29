@@ -45,6 +45,10 @@ public class Building {
         }
     }
 
+    public void saveBook(Book book){
+        bookDao.save(book);
+    }
+
     //|||CONSTRUCTORS|||
 
     //empty for database setup
