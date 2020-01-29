@@ -13,8 +13,8 @@ public class Building {
 
     //||DAO||
 
-    @Autowired
-    private BookDao bookDao;
+    //@Autowired
+    //private BookDao bookDao;
 
     //||PROPERTIES||
 
@@ -31,6 +31,7 @@ public class Building {
 
     //|||METHODS|||
 
+    /*
     public void addBook(String bookName, String pageContents){
         Book book = new Book((books.size()),bookName);
         book.createPage((book.getNumberOfPages() + 1),pageContents);
@@ -48,6 +49,7 @@ public class Building {
     public void saveBook(Book book){
         bookDao.save(book);
     }
+     */
 
     //|||CONSTRUCTORS|||
 
