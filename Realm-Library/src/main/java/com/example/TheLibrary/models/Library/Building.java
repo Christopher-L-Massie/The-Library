@@ -1,5 +1,8 @@
 package com.example.TheLibrary.models.Library;
 
+import com.example.TheLibrary.models.data.BookDao;
+import org.springframework.beans.factory.annotation.Autowired;
+
 import javax.persistence.*;
 import java.sql.Timestamp;
 import java.util.ArrayList;
@@ -7,6 +10,11 @@ import java.util.List;
 
 @Entity
 public class Building {
+
+    //||DAO||
+
+    @Autowired
+    private BookDao bookDao;
 
     //||PROPERTIES||
 
@@ -23,8 +31,10 @@ public class Building {
 
     //|||METHODS|||
 
-    public void addBook(){
-        System.out.println("Placeholder!");
+    public void addBook(String bookName, String pageContents){
+        Book book = new Book((books.size()),bookName);
+        book.createPage((book.getNumberOfPages() + 1),pageContents);
+        bookDao.save(book);
     }
 
     //|||CONSTRUCTORS|||
