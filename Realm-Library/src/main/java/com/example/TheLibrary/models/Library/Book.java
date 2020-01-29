@@ -91,7 +91,7 @@ public class Book {
 
     public void setNumberOfPages(int numberOfPages){this.numberOfPages = numberOfPages;}
 
-    public int getBookNumber(){return this.bookNumber;}
+    public Integer getBookNumber(){return this.bookNumber;}
 
     private void setBookNumber(Integer bookNumber){this.bookNumber = bookNumber;}
 }
