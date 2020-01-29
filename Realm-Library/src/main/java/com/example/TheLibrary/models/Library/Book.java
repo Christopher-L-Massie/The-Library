@@ -14,7 +14,7 @@ public class Book {
     @GeneratedValue
     int id;
 
-    private int bookNumber;
+    private Integer bookNumber;
 
     private String bookName;
 
@@ -93,5 +93,5 @@ public class Book {
 
     public int getBookNumber(){return this.bookNumber;}
 
-    private void setBookNumber(int bookNumber){this.bookNumber = bookNumber;}
+    private void setBookNumber(Integer bookNumber){this.bookNumber = bookNumber;}
 }
