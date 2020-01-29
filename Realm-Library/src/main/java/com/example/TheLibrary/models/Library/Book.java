@@ -90,4 +90,8 @@ public class Book {
     public int getNumberOfPages(){return this.numberOfPages;}
 
     public void setNumberOfPages(int numberOfPages){this.numberOfPages = numberOfPages;}
+
+    public int getBookNumber(){return this.bookNumber;}
+
+    private void setBookNumber(int bookNumber){this.bookNumber = bookNumber;}
 }
