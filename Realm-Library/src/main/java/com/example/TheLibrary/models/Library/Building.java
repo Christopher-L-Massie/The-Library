@@ -37,6 +37,14 @@ public class Building {
         bookDao.save(book);
     }
 
+    public void saveBook(Integer bookNumber){
+        for (Book book: bookDao.findAll()){
+            if (bookNumber.equals(book.getBookNumber())){
+                bookDao.save(book);
+            }
+        }
+    }
+
     //|||CONSTRUCTORS|||
 
     //empty for database setup
