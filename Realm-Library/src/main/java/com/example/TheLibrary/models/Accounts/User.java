@@ -16,6 +16,8 @@ public class User {
 
     private String userName;
 
+    private String password;
+
     private Timestamp timeCreated = new Timestamp(System.currentTimeMillis());
 
     //|||CONSTRUCTORS|||
