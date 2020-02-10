@@ -1,23 +1,37 @@
 # The Library #
 
-Explore a vast Library of books and short stories.
+                            Explore a vast Library of user generated books and short stories.
 
 # Overview #
 
 The Library is a virtual space where anybody can write and place a book on one of the bookcases in the library.
 
-The Library will feature design choices that feel more like browsing a very large library of books rather than searching through a database with filters. 
+The Library will feature design choices that feel more like browsing a very large library of books rather than searching through a computer database. 
 
 
 # Features #
 
 -Write Books that get placed on a shelf and will always keep their place to come back to later.
 
+    -Sign your book so nobody can change it!
+    
+    -Leave your book free to be edited by anyone
+    
+    -Allow only select users to edit the books you've written.
+
 -Browse bookcases to see which books neighbor yours
 
 -Explore a virtual library of user generated books
 
+    -Users are free to write books as long or as short as they would like
+    
+    -Books are never destroyed
+
 -Create accounts for keeping track of your books location
+
+    -Save the place of your favorite books on your library card
+    
+    -Edit books after signing them!
 
 # Possible Features #
 
