@@ -29,4 +29,13 @@ public class User {
         this.userName = userName;
         this.password = password;
     }
+
+    //|||METHODS|||
+
+    //|||ACCESSORS|||
+
+    public String getUserName() {
+        return userName;
+    }
+    
 }
