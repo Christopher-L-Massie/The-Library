@@ -18,19 +18,17 @@ public class TestController {
     @RequestMapping(value = "book")
     public String testCharacterCreator(Model model){
 
-        Book newBook = new Book(1,"The Test");
+        Book newBook = new Book(1,"The Test","edit");
         newBook.createPage(1,"Hello a test book");
         bookDao.save(newBook);
 
         for(Book book: bookDao.findAll()){
-           System.out.println(book);
+           System.out.println(book.getPages().get(0));
         }
 
         System.out.println("hello");
 
-        return"Test/index";
+        return"Test/TEST_index";
     }
-
-
 
 }
