@@ -29,6 +29,8 @@ public class Book {
 
     private String editCode;
 
+    private int timesOpened;
+
     //|||METHODS|||
 
     public void createPage(int pageNumber,String pageContents){
@@ -97,4 +99,6 @@ public class Book {
     public Integer getBookNumber(){return this.bookNumber;}
 
     private void setBookNumber(Integer bookNumber){this.bookNumber = bookNumber;}
+
+    private int getTimesOpened() {return this.timesOpened;}
 }
