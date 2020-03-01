@@ -27,6 +27,8 @@ public class Book {
 
     private boolean isSigned = false;
 
+    private String editCode;
+
     //|||METHODS|||
 
     public void createPage(int pageNumber,String pageContents){
@@ -43,10 +45,11 @@ public class Book {
     //empty for database setup
     public Book(){}
 
-    public Book(int bookNumber,String bookName){
+    public Book(int bookNumber,String bookName, String editCode){
         this.bookNumber = bookNumber;
         this.bookName = bookName;
         this.timeCreated = new Timestamp(System.currentTimeMillis());
+        this.editCode = editCode;
     }
 
     //|||ACCESSORS|||
