@@ -18,7 +18,13 @@ public class Page {
 
     private Timestamp timeCreated = new Timestamp(System.currentTimeMillis());
 
+    private int timesRead;
+
     //|||METHODS|||
+
+    public void read(){
+        timesRead++;
+    }
 
     //|||CONSTRUCTORS|||
 
@@ -64,4 +70,6 @@ public class Page {
     public void setTimeCreated(Timestamp timeCreated) {
         this.timeCreated = timeCreated;
     }
+
+    public int getTimesRead(){return this.timesRead;}
 }
