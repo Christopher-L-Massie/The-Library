@@ -18,12 +18,15 @@ public class Page {
 
     private Timestamp timeCreated = new Timestamp(System.currentTimeMillis());
 
+    private Timestamp lastRead;
+
     private int timesRead;
 
     //|||METHODS|||
 
     public void read(){
         timesRead++;
+        lastRead = new Timestamp(System.currentTimeMillis());
     }
 
     //|||CONSTRUCTORS|||
