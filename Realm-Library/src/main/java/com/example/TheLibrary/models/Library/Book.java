@@ -31,11 +31,23 @@ public class Book {
 
     private int timesOpened;
 
+    private int timesRead;
+
     //|||METHODS|||
 
     public void createPage(int pageNumber,String pageContents){
         this.pages.add(new Page(pageNumber,pageContents));
         this.setNumberOfPages(pages.size());
+    }
+
+    public void updateStats(){
+        int highestReadCount = 0;
+        for (Page page : pages){
+            if (page.getTimesRead() > highestReadCount){
+                highestReadCount = page.getTimesRead();
+            }
+        }
+        this.timesRead = highestReadCount;
     }
 
     public void signBook(){
